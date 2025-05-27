@@ -9,7 +9,7 @@ const hostels = [
     description: "Affordable and cozy hostel.",
     averageRating: 4.5,
     pricePerNight: 30,
-    imageUrl: "https://via.placeholder.com/300"
+    imageUrl: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg"
   },
   {
     name: "City Stay",
@@ -17,7 +17,7 @@ const hostels = [
     description: "Modern rooms with central access.",
     averageRating: 4.2,
     pricePerNight: 40,
-    imageUrl: "https://via.placeholder.com/300"
+    imageUrl: "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
   },
   {
     name: "Novotel",
@@ -25,7 +25,7 @@ const hostels = [
     description: "High class and Luxury rooms with beach view.",
     averageRating: 4.7,
     pricePerNight: 45,
-    imageUrl: "https://via.placeholder.com/300"
+    imageUrl: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
   },
 ];
 

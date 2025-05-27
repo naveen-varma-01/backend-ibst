@@ -6,14 +6,14 @@ const app = express();
 const PORT = 3001;
 
 app.use(cors());
-app.use(express.json()); // For parsing JSON
+app.use(express.json());
 
-// Test Route
+
 app.get('/', (req, res) => {
-  res.send('🏕️ Hostelworld API is running');
+  res.send('Hostelworld API is running');
 });
 
-// GET /hostels?city=London
+
 app.get('/hostels', (req, res) => {
   const city = req.query.city;
 
@@ -35,7 +35,7 @@ app.get('/hostels', (req, res) => {
   });
 });
 
-// GET /hostels/:id
+
 app.get('/hostels/:id', (req, res) => {
   const id = req.params.id;
 
@@ -54,7 +54,7 @@ app.get('/hostels/:id', (req, res) => {
       return;
     }
 
-    // Get reviews for the hostel
+    
     db.all(
       'SELECT * FROM reviews WHERE hostelId = ?',
       [id],
@@ -69,14 +69,14 @@ app.get('/hostels/:id', (req, res) => {
   });
 });
 
-// (Optional) POST /bookings
+
 app.post('/bookings', (req, res) => {
-  // You can just log the data for now as a mock
-  console.log('📦 Booking request received:', req.body);
+  
+  console.log('Booking request received:', req.body);
   res.status(201).json({ message: 'Booking request received (mock)' });
 });
 
-// Start Server
+
 app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
